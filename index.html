@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="../imagens/calculator/Blackvariant-Shadow135-System-Calculator.512.png" type="image/x-icon">
+    <link rel="stylesheet" href="csscalculator.css">
+</head>
+<body>
+    <section>
+        <div class="tranparent">
+    <h1>Calculadora</h1>
+    <div class="calculator">
+    <div class="display-margin"><p id="display"></p></div>
+    <div class="buttons">
+    <table>
+        <tr>
+            <td><button onclick="clean()">C</button></td>
+            <td><button onclick="back()"><</button></td>
+            <td><button onclick="func(`/`)">/</button></td>
+            <td><button onclick="func(`*`)">X</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="func(`7`)">7</button></td>
+            <td><button onclick="func(`8`)">8</button></td>
+            <td><button onclick="func(`9`)">9</button></td>
+            <td><button onclick="func(`-`)">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="func(`4`)">4</button></td>
+            <td><button onclick="func(`5`)">5</button></td>
+            <td><button onclick="func(`6`)">6</button></td>
+            <td><button onclick="func(`+`)">+</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="func(`1`)">1</button></td>
+            <td><button onclick="func(`2`)">2</button></td>
+            <td><button onclick="func(`3`)">3</button></td>
+            <td rowspan="2"><button style="height: 150px;" onclick="calcular()">=</button></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button style="width: 120px;" onclick="func(`0`)">0</button></td>
+            <td><button onclick="func(`.`)">.</button></td>
+        </tr>
+    </table></div></div></div>
+</section>
+<script src="javascript.js"> </script> 
+</body>
+</html>
